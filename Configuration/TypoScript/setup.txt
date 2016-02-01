@@ -1,0 +1,47 @@
+# ------------------------------------------------------------------------------
+# Add google-analytics trackingcode
+# ------------------------------------------------------------------------------
+plugin.tx_libjsanalytics {
+	settings {
+		enable = {$plugin.tx_libjsanalytics.settings.enable}
+		forceCdn = {$plugin.tx_libjsanalytics.settings.forceCdn}
+		alternative = {$plugin.tx_libjsanalytics.settings.alternative}
+		gaObjectName = {$plugin.tx_libjsanalytics.settings.gaObjectName}
+		pageExclude = {$plugin.tx_libjsanalytics.settings.pageExclude}
+		gaObject {
+			default {
+				create {
+					trackingId = {$plugin.tx_libjsanalytics.settings.trackingId}
+					name = {$plugin.tx_libjsanalytics.settings.name}
+				}
+				#require {
+				#}
+				set {
+					anonymizeIp = {$plugin.tx_libjsanalytics.settings.anonymizeIp}
+					anonymizeIp.type = boolean
+				}
+				# This part will be rendered as COA:
+				#additionalScript {
+				#	1 = TEXT
+				#	1.value = ga(function() { console.log(ga.getAll()); });
+				#	1.wrap = ga('set', {hitCallback: |});
+				#}
+				send {
+					# Define different hitTypes here:
+					pageview {
+					}
+				}
+			}
+		}
+	}
+}
+
+[globalVar = LIT:1 = {$plugin.tx_libjsanalytics.settings.disableIfBeUserLogin}] && [globalVar = TSFE : beUserLogin > 0]
+# Since we cannot read HTTP-only cookies via javascript and therefore cannot determine if
+# a backend-user is logged in, we need to use a condition to load the script accordingly.
+plugin.tx_libjsanalytics {
+	settings {
+		enable = 0
+	}
+}
+[global]

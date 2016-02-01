@@ -1,0 +1,4 @@
+# cat=basic/enable/1; type=string; label=LLL:EXT:lib_js_analytics/Resources/Private/Language/locallang.xlf:extmgm.sourceFile
+sourceFile = //www.google-analytics.com/analytics.js
+# cat=basic/enable/2; type=string; label=LLL:EXT:lib_js_analytics/Resources/Private/Language/locallang.xlf:extmgm.localFile
+localFile = uploads/tx_libjsanalytics/analytics.js

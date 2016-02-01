@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-12-14T13:07:39Z" product-name="lib_js_analytics">
+		<header/>
+		<body>
+			<trans-unit id="settings.enable" xml:space="preserve">
+                <source>Enable: Enable this if you want to include google-analytics on your site.</source>
+            </trans-unit>
+			<trans-unit id="settings.trackingId" xml:space="preserve">
+                <source>Tracking ID / Web Property ID: The tracking ID / web property ID. The format is UA-XXXX-Y. All collected data is associated by this ID.</source>
+            </trans-unit>
+			<trans-unit id="settings.name" xml:space="preserve">
+                <source>Tracker Name: Name of the tracker object (optional).</source>
+            </trans-unit>
+			<trans-unit id="settings.anonymizeIp" xml:space="preserve">
+                <source>Anonymize IP: When present, the IP address of the sender will be anonymized.</source>
+            </trans-unit>
+			<trans-unit id="settings.pageExclude" xml:space="preserve">
+                <source>Page exclude: Set page-IDs (commaseparated list) where the tracking code should not be used.</source>
+            </trans-unit>
+			<trans-unit id="settings.forceCdn" xml:space="preserve">
+                <source>Force CDN: Force the use of the external analytics-script from Google's CDN.</source>
+            </trans-unit>
+			<trans-unit id="settings.disableIfBeUserLogin" xml:space="preserve">
+                <source>Disable if BE-session is active: Enable this if you want to include the script only if there is no backend-user logged in (Be aware that this will add the condition 'beUserLogin' which will influence site-caching!).</source>
+            </trans-unit>
+			<trans-unit id="settings.alternative" xml:space="preserve">
+                <source>Use alternative script: Enable alternative async tracking snippet for use in modern browsers (see: https://developers.google.com/analytics/devguides/collection/analyticsjs/).</source>
+            </trans-unit>
+			<trans-unit id="settings.gaObjectName" xml:space="preserve">
+                <source>Name of the ga object: In some cases you'd like to add analytics.js to your page, but the 'ga' variable is already being used for something else. To deal with this, analytics.js provides a mechanism for renaming the global 'ga' object.</source>
+            </trans-unit>
+			<trans-unit id="extmgm.sourceFile" xml:space="preserve">
+                <source>URL to Google-Analytics: URL to Google-Analytics javascript (analytics.js)</source>
+            </trans-unit>
+			<trans-unit id="extmgm.localFile" xml:space="preserve">
+                <source>Local javascript-file: Path to the local javascript-file of Google-Analytic (relative to PATH_site).</source>
+            </trans-unit>
+			<trans-unit id="extmgm.forceExternal" xml:space="preserve">
+                <source>Force external file: Enable this if you want to force the use of the original file from Google's CDN.</source>
+            </trans-unit>
+			<trans-unit id="task.update.title" xml:space="preserve">
+                <source>Update analytics.js from Google's CDN</source>
+            </trans-unit>
+			<trans-unit id="task.update.description" xml:space="preserve">
+                <source>Update the Google-Analytics JavaScript tracking snippet.</source>
+            </trans-unit>
+			<trans-unit id="tools.checkLocalFile.targetError" xml:space="preserve">
+                <source>Target for '%s' could not be resolved.</source>
+            </trans-unit>
+			<trans-unit id="tools.getContentFromSourceFile.404" xml:space="preserve">
+                <source>Sourcefile %s could not be downloaded (Error 404).</source>
+            </trans-unit>
+			<trans-unit id="tools.getContentFromSourceFile.wrongType" xml:space="preserve">
+                <source>Successfully downloaded content from %s, but the response was not of type 'text/javascript'.</source>
+            </trans-unit>
+			<trans-unit id="tools.getContentFromSourceFile.emptyFile" xml:space="preserve">
+                <source>Successfully downloaded %s, but the result was empty.</source>
+            </trans-unit>
+			<trans-unit id="tools.getContentFromSourceFile.error" xml:space="preserve">
+                <source>Failed to download %s. %s</source>
+            </trans-unit>
+			<trans-unit id="tools.writeJavascriptFile.success" xml:space="preserve">
+                <source>Content of %s was successfully saved to '%s'.</source>
+            </trans-unit>
+			<trans-unit id="tools.writeJavascriptFile.writeError" xml:space="preserve">
+                <source>This is serious: the file '%s' could not be written to the filesystem.</source>
+            </trans-unit>
+		</body>
+	</file>
+</xliff>
