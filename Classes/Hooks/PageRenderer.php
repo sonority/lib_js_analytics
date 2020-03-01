@@ -129,7 +129,7 @@ class PageRenderer
                   }
                  */
                 // Compile final codeblock
-                $inlineCode = (empty($gaCookieConsent) ? '<script type="text/javascript">' : '<script' . $gaCookieConsent . ' type="text/plain">') .
+                $scriptTag = (empty($gaCookieConsent) ? '<script type="text/javascript">' : '<script' . $gaCookieConsent . ' type="text/plain">') .
                     LF . '/*<![CDATA[*/' .
                     $analyticsPreScript .
                     $scriptTag .
