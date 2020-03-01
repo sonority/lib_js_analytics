@@ -21,5 +21,7 @@ plugin.tx_libjsanalytics {
 		alternative = 1
 		# cat=Google Analytics//9; type=string; label=LLL:EXT:lib_js_analytics/Resources/Private/Language/locallang.xlf:settings.gaObjectName
 		gaObjectName = ga
+		# cat=Google Analytics//10; type=string; label=LLL:EXT:lib_js_analytics/Resources/Private/Language/locallang.xlf:settings.gaCookieConsent
+		gaCookieConsent =
 	}
 }

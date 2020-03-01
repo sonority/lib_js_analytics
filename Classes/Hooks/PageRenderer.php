@@ -55,6 +55,12 @@ class PageRenderer
                 } else {
                     $gaObjectName = 'ga';
                 }
+                // Set attribute for cookie-consent
+                if (!empty($conf['gaCookieConsent'])) {
+                    $gaCookieConsent = ' ' . htmlentities($conf['gaCookieConsent'], ENT_NOQUOTES);
+                } else {
+                    $gaCookieConsent = '';
+                }
                 // Get filePath to analytics.js
                 $analyticsJavascriptFile = Tools::getConfParam('localFile');
                 if ($conf['forceCdn'] || !file_exists(PATH_site . $analyticsJavascriptFile)) {
@@ -85,7 +91,12 @@ class PageRenderer
                     // Set the time (as an integer) this tag was executed (Used for timing hits)
                     $scriptTag .= LF . $gaObjectName . '.l =+ new Date;';
                     // Compile final script-tag for analytics.js
-                    $analyticsPostScript = LF . '<script src="' . $analyticsJavascriptFile . '" type="text/javascript" async="async"></script>';
+                    // Compile final script-tag for analytics.js
+                    if (empty($gaCookieConsent)) {
+                        $analyticsPostScript = LF . '<script src="' . $analyticsJavascriptFile . '" type="text/javascript" async="async"></script>';
+                    } else {
+                        $analyticsPostScript = LF . '<script' . $gaCookieConsent . ' data-src="' . $analyticsJavascriptFile . '" type="text/plain" async="async"></script>';
+                    }
                 } else {
                     // Compile final script-tag for analytics.js
                     $analyticsPreScript = LF . '(function(i,s,o,g,r,a,m){i[\'GoogleAnalyticsObject\']=r;i[r]=i[r]||function(){' .
@@ -118,7 +129,7 @@ class PageRenderer
                   }
                  */
                 // Compile final codeblock
-                $scriptTag = '<script type="text/javascript">' .
+                $inlineCode = (empty($gaCookieConsent) ? '<script type="text/javascript">' : '<script' . $gaCookieConsent . ' type="text/plain">') .
                     LF . '/*<![CDATA[*/' .
                     $analyticsPreScript .
                     $scriptTag .

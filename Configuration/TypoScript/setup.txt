@@ -8,6 +8,7 @@ plugin.tx_libjsanalytics {
 		alternative = {$plugin.tx_libjsanalytics.settings.alternative}
 		gaObjectName = {$plugin.tx_libjsanalytics.settings.gaObjectName}
 		pageExclude = {$plugin.tx_libjsanalytics.settings.pageExclude}
+		gaCookieConsent = {$plugin.tx_libjsanalytics.settings.gaCookieConsent}
 		gaObject {
 			default {
 				create {

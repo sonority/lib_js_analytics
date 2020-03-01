@@ -30,6 +30,9 @@
 			<trans-unit id="settings.gaObjectName" xml:space="preserve">
                 <source>Name of the ga object: In some cases you'd like to add analytics.js to your page, but the 'ga' variable is already being used for something else. To deal with this, analytics.js provides a mechanism for renaming the global 'ga' object.</source>
             </trans-unit>
+            <trans-unit id="settings.gaCookieConsent" xml:space="preserve">
+                <source>Script-Tag for Cookie Consent: To use this extension with cookie consent, enter a script-tag here which will be added as "data-SCRIPTTAG". If not empty, all external scripts are added with "data-src" instead of "src".</source>
+            </trans-unit>
 			<trans-unit id="extmgm.sourceFile" xml:space="preserve">
                 <source>URL to Google-Analytics: URL to Google-Analytics javascript (analytics.js)</source>
             </trans-unit>

@@ -39,6 +39,10 @@
                 <source>Name of the GA-object: In some cases you'd like to add analytics.js to your page, but the 'ga' variable is already being used for something else. To deal with this, analytics.js provides a mechanism for renaming the global 'ga' object.</source>
                 <target>Name des GA-Objektes: In manchen Fällen ist es notwendig die 'ga'-Variable umzubenennen, weil diese schon von einem anderen Mechanismus verwendet wird. In diesem Fall geben Sie hier den Namem des Objektes an.</target>
             </trans-unit>
+            <trans-unit id="settings.gaCookieConsent" xml:space="preserve" approved="yes">
+                <source>Script-Tag for Cookie Consent: To use this extension with cookie consent, enter a script-tag here which will be added as "data-SCRIPTTAG". If not empty, all external scripts are added with "data-src" instead of "src".</source>
+                <target>Script-Tag für Cookie Consent: Um diese Extension mit Cookie Consent zu verwenden, geben Sie hier einen Script-Tag an welcher als "data-SCRIPTTAG" hinzugefügt wird. Wenn nicht leer, werden alle externen Scripte mit "data-src" hinzugefügt, statt mit "src".</target>
+            </trans-unit>
 			<trans-unit id="extmgm.sourceFile" xml:space="preserve" approved="yes">
                 <source>URL to Google-Analytics: URL to Google-Analytics javascript (analytics.js)</source>
                 <target>URL zu Google-Analytics: URL to Google-Analytics javascript (analytics.js)</target>
