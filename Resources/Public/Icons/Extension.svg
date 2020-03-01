@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="156"
+   height="156"
+   id="svg2984">
+  <title
+     id="title3789">lib_js</title>
+  <defs
+     id="defs2986" />
+  <metadata
+     id="metadata2989">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>lib_js</dc:title>
+        <dc:date>04.12.2015</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>stephan.kellermayr@gmail.com</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title>sonority.at</dc:title>
+          </cc:Agent>
+        </dc:rights>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-93.428574,-345.79375)"
+     id="layer1">
+    <rect
+       width="156"
+       height="156"
+       x="93.428574"
+       y="345.79376"
+       id="background"
+       style="fill:#e4a127;fill-opacity:1" />
+    <path
+       d="m 108.46875,35.15625 c -16.818567,0 -26.788025,5.358232 -28.34375,19.90625 L 69.125,36 l -33.5,0 0,14.15625 17.0625,29.5625 0,9.8125 c 0,12.47999 -1.815,16.90625 -9.375,16.90625 -3.83999,0 -9.35875,-0.5875 -12.71875,-1.1875 l 0,14.28125 L 51.65625,156 156,156 l 0,-62.53125 -32.625,-56.5 c -3.48,-0.96 -10.46626,-1.8125 -14.90625,-1.8125 z"
+       transform="translate(93.428574,345.79375)"
+       id="shadow"
+       style="color:#000000;fill:#000000;fill-opacity:0.2745098;fill-rule:nonzero;stroke:none;stroke-width:0.03543307;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <path
+       d="m 218.82952,440.83376 c 0,-17.87998 -7.80001,-23.76 -19.32,-26.16 -7.55999,-1.56 -9.48,-3.24001 -9.48,-10.92 0,-6.11999 3.84,-8.64 10.68,-8.64 4.19999,0 12,0.84 16.08,1.8 l 0,-14.16 c -3.48,-0.96 -10.44001,-1.8 -14.88,-1.8 -18.35998,0 -28.56,6.36002 -28.56,24.12 0,14.03999 5.28001,21.36 18.6,24.12 6.47999,1.32 10.2,4.08001 10.2,12.84 0,7.67999 -4.80001,10.44 -12.24,10.44 -4.68,0 -12.12001,-0.96 -15.84,-1.92 l 0,14.28 c 4.07999,1.08 11.76,1.8 17.04,1.8 15.95998,0 27.72,-3.24002 27.72,-25.8 m -56.28188,-6.36 0,-52.68 -33.48,0 0,14.16 17.04,0 0,39.36 c 0,12.47999 -1.8,16.92 -9.36,16.92 -3.83999,0 -9.36,-0.6 -12.72,-1.2 l 0,14.28 c 3.84,0.84 10.68001,1.68 14.64,1.68 18.71998,0 23.88,-7.68002 23.88,-32.52"
+       id="icon"
+       style="font-size:120px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Share-Bold;-inkscape-font-specification:Share-Bold" />
+  </g>
+</svg>
